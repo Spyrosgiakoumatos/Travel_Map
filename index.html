@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+<style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+<style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" rel="stylesheet"/>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" rel="stylesheet"/>
+<meta content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<style>
+                #map_2c7d3786fe2c6f9e744dcfc5a4299126 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+</head>
+<body>
+<div class="folium-map" id="map_2c7d3786fe2c6f9e744dcfc5a4299126"></div>
+</body>
+<script>
+    
+    
+            var map_2c7d3786fe2c6f9e744dcfc5a4299126 = L.map(
+                "map_2c7d3786fe2c6f9e744dcfc5a4299126",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b0dcec8d6b0b838d33811a49240ca9af = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var marker_ee3f552dde2458e90ddc6e35a571239b = L.marker(
+                [40.7128, -74.006],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_a4c91493e2854e51d01c29d45ac48a33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee3f552dde2458e90ddc6e35a571239b.setIcon(icon_a4c91493e2854e51d01c29d45ac48a33);
+        
+    
+        var popup_1687e1dec6ebc590e1e08e85ed7c11cf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f1a9ec3eee4342b589295688a28b2229 = $(`<div id="html_f1a9ec3eee4342b589295688a28b2229" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> New York<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη-Φθινόπωρο<br>         <b>Εκτιμώμενο Κόστος:</b> 7540.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 7935.6<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 500.0<br>         <b>Υπόλοιπο Ποσό:</b> 7435.6<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_1687e1dec6ebc590e1e08e85ed7c11cf.setContent(html_f1a9ec3eee4342b589295688a28b2229);
+        
+
+        marker_ee3f552dde2458e90ddc6e35a571239b.bindPopup(popup_1687e1dec6ebc590e1e08e85ed7c11cf)
+        ;
+
+        
+    
+    
+            var marker_d0c1ea8c53ac20e884755b391db30b0d = L.marker(
+                [64.9631, -19.0208],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_df31fb67ea9bd432f33308d1f89165ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d0c1ea8c53ac20e884755b391db30b0d.setIcon(icon_df31fb67ea9bd432f33308d1f89165ca);
+        
+    
+        var popup_ad70d0bd5880e38ca048a2654420c721 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3b1f46bbd914708045e05d1a7dc26751 = $(`<div id="html_3b1f46bbd914708045e05d1a7dc26751" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Ισλανδία<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 3100.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 4079.2<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 4079.2<br>         <b>Σημειώσεις:</b> Northern Lights tours         </div>`)[0];
+            popup_ad70d0bd5880e38ca048a2654420c721.setContent(html_3b1f46bbd914708045e05d1a7dc26751);
+        
+
+        marker_d0c1ea8c53ac20e884755b391db30b0d.bindPopup(popup_ad70d0bd5880e38ca048a2654420c721)
+        ;
+
+        
+    
+    
+            var marker_7326ea01c1b91b65e6938a4d82c0e2d4 = L.marker(
+                [46.0161, 9.2572],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_5290359699d7732877ffdfba5ceeac3b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7326ea01c1b91b65e6938a4d82c0e2d4.setIcon(icon_5290359699d7732877ffdfba5ceeac3b);
+        
+    
+        var popup_fdc2ae4158c3bf9c822ed4927dd56736 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_121afe553a49eee6c099545037e884a1 = $(`<div id="html_121afe553a49eee6c099545037e884a1" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Λίμνη Κόμο<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη-Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 1360.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1570.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 200.0<br>         <b>Υπόλοιπο Ποσό:</b> 1370.0<br>         <b>Σημειώσεις:</b> Περιοδεία στη λίμνη         </div>`)[0];
+            popup_fdc2ae4158c3bf9c822ed4927dd56736.setContent(html_121afe553a49eee6c099545037e884a1);
+        
+
+        marker_7326ea01c1b91b65e6938a4d82c0e2d4.bindPopup(popup_fdc2ae4158c3bf9c822ed4927dd56736)
+        ;
+
+        
+    
+    
+            var marker_6e860c7ddb508638e7e857d9ea55be43 = L.marker(
+                [48.5734, 7.7521],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_0edaca0612d0c6d41ea319530ce2713b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6e860c7ddb508638e7e857d9ea55be43.setIcon(icon_0edaca0612d0c6d41ea319530ce2713b);
+        
+    
+        var popup_a483e1814f33a6cac896a1a5dd571b41 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba967e7afc2357c9c32b7b30751e1e47 = $(`<div id="html_ba967e7afc2357c9c32b7b30751e1e47" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Στρασβούργο<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Χειμώνας-Χριστούγεννα<br>         <b>Εκτιμώμενο Κόστος:</b> 1250.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1420.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 300.0<br>         <b>Υπόλοιπο Ποσό:</b> 1120.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_a483e1814f33a6cac896a1a5dd571b41.setContent(html_ba967e7afc2357c9c32b7b30751e1e47);
+        
+
+        marker_6e860c7ddb508638e7e857d9ea55be43.bindPopup(popup_a483e1814f33a6cac896a1a5dd571b41)
+        ;
+
+        
+    
+    
+            var marker_ee42b839ef3bb85dd451b30650cf3545 = L.marker(
+                [51.0543, 3.7174],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_5a0939b725abab86621b990655e19c31 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ee42b839ef3bb85dd451b30650cf3545.setIcon(icon_5a0939b725abab86621b990655e19c31);
+        
+    
+        var popup_6fba00514eae7536fd545070c438a0dc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bed6224d0cf49d31deac67aeccbb04d3 = $(`<div id="html_bed6224d0cf49d31deac67aeccbb04d3" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Γάνδη (Βέλγιο)<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Όλο το χρόνο<br>         <b>Εκτιμώμενο Κόστος:</b> 1250.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1530.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 150.0<br>         <b>Υπόλοιπο Ποσό:</b> 1380.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_6fba00514eae7536fd545070c438a0dc.setContent(html_bed6224d0cf49d31deac67aeccbb04d3);
+        
+
+        marker_ee42b839ef3bb85dd451b30650cf3545.bindPopup(popup_6fba00514eae7536fd545070c438a0dc)
+        ;
+
+        
+    
+    
+            var marker_c72ba6d8f15d75e4cc1bd545365e465e = L.marker(
+                [55.9533, -3.1883],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_4f5fb4e7511c515c4927ac37bab1281f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c72ba6d8f15d75e4cc1bd545365e465e.setIcon(icon_4f5fb4e7511c515c4927ac37bab1281f);
+        
+    
+        var popup_52418646a00ac6448512f8d653577d37 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f2af9fbddbc00de2a55cfa5ce03c0ee = $(`<div id="html_2f2af9fbddbc00de2a55cfa5ce03c0ee" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Εδιμβούργο<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Φθινόπωρο<br>         <b>Εκτιμώμενο Κόστος:</b> 2080.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 2360.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 400.0<br>         <b>Υπόλοιπο Ποσό:</b> 1960.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_52418646a00ac6448512f8d653577d37.setContent(html_2f2af9fbddbc00de2a55cfa5ce03c0ee);
+        
+
+        marker_c72ba6d8f15d75e4cc1bd545365e465e.bindPopup(popup_52418646a00ac6448512f8d653577d37)
+        ;
+
+        
+    
+    
+            var marker_434b13feea9e0dd6b1eb09df5d61b95f = L.marker(
+                [41.3851, 2.1734],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_4eb13120868363e2ee832e62f5a9ab6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_434b13feea9e0dd6b1eb09df5d61b95f.setIcon(icon_4eb13120868363e2ee832e62f5a9ab6e);
+        
+    
+        var popup_bda12c771b295320c9c2b95539dc1501 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f0843cbf560bb5add2a212c44b0df97 = $(`<div id="html_0f0843cbf560bb5add2a212c44b0df97" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Βαρκελώνη<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη<br>         <b>Εκτιμώμενο Κόστος:</b> 1760.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 2040.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 100.0<br>         <b>Υπόλοιπο Ποσό:</b> 1940.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_bda12c771b295320c9c2b95539dc1501.setContent(html_0f0843cbf560bb5add2a212c44b0df97);
+        
+
+        marker_434b13feea9e0dd6b1eb09df5d61b95f.bindPopup(popup_bda12c771b295320c9c2b95539dc1501)
+        ;
+
+        
+    
+    
+            var marker_d37f480dc4645ebe887f62997548d53a = L.marker(
+                [52.3676, 4.9041],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_18587bd2dfa18275d8a26cee5c586c0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d37f480dc4645ebe887f62997548d53a.setIcon(icon_18587bd2dfa18275d8a26cee5c586c0d);
+        
+    
+        var popup_47d2723c7944e428fc23de59db087b72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_70f2de5fc89beebc9ff494a4904aa5ad = $(`<div id="html_70f2de5fc89beebc9ff494a4904aa5ad" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Άμστερνταμ<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη-Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 2200.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 2480.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 50.0<br>         <b>Υπόλοιπο Ποσό:</b> 2430.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_47d2723c7944e428fc23de59db087b72.setContent(html_70f2de5fc89beebc9ff494a4904aa5ad);
+        
+
+        marker_d37f480dc4645ebe887f62997548d53a.bindPopup(popup_47d2723c7944e428fc23de59db087b72)
+        ;
+
+        
+    
+    
+            var marker_b7848e9561ace3c24e52ec2d20ee57d4 = L.marker(
+                [50.0755, 14.4378],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_008b3a7c19c3969f17d75d31848f1538 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b7848e9561ace3c24e52ec2d20ee57d4.setIcon(icon_008b3a7c19c3969f17d75d31848f1538);
+        
+    
+        var popup_773dc4f3a82ea8efff880b92b0325d78 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ffb866526c36b958613f360b9eff01a = $(`<div id="html_0ffb866526c36b958613f360b9eff01a" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Πράγα<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη-Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 1140.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1420.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1420.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_773dc4f3a82ea8efff880b92b0325d78.setContent(html_0ffb866526c36b958613f360b9eff01a);
+        
+
+        marker_b7848e9561ace3c24e52ec2d20ee57d4.bindPopup(popup_773dc4f3a82ea8efff880b92b0325d78)
+        ;
+
+        
+    
+    
+            var marker_568d4021b7252362eddcd300876d7cc2 = L.marker(
+                [55.6761, 12.5683],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_5b0e1defd6a81973be936bc7def198dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_568d4021b7252362eddcd300876d7cc2.setIcon(icon_5b0e1defd6a81973be936bc7def198dc);
+        
+    
+        var popup_85c2ce808f389b37373a11ffa5a154cc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4e14e08488986b2fd407f1ff921b3c02 = $(`<div id="html_4e14e08488986b2fd407f1ff921b3c02" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Κοπεγχάγη<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 2320.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 2600.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 2600.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_85c2ce808f389b37373a11ffa5a154cc.setContent(html_4e14e08488986b2fd407f1ff921b3c02);
+        
+
+        marker_568d4021b7252362eddcd300876d7cc2.bindPopup(popup_85c2ce808f389b37373a11ffa5a154cc)
+        ;
+
+        
+    
+    
+            var marker_f00e88611458cdc6855723a3d12cea42 = L.marker(
+                [48.2082, 16.3738],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_5857ff8e3196bb983db35c5efe012cf0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f00e88611458cdc6855723a3d12cea42.setIcon(icon_5857ff8e3196bb983db35c5efe012cf0);
+        
+    
+        var popup_f6e07e528ba25fe4027ed1c1bcaff75d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6374a6b6ce391461732b762151df472e = $(`<div id="html_6374a6b6ce391461732b762151df472e" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Βιέννη<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Χειμώνας-Άνοιξη<br>         <b>Εκτιμώμενο Κόστος:</b> 1450.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1730.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1730.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_f6e07e528ba25fe4027ed1c1bcaff75d.setContent(html_6374a6b6ce391461732b762151df472e);
+        
+
+        marker_f00e88611458cdc6855723a3d12cea42.bindPopup(popup_f6e07e528ba25fe4027ed1c1bcaff75d)
+        ;
+
+        
+    
+    
+            var marker_cfda4e270a4e33ddab2e709991a373d7 = L.marker(
+                [42.6507, 18.0944],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_ffcd4f5cdea576689328c0ef9be9cea2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cfda4e270a4e33ddab2e709991a373d7.setIcon(icon_ffcd4f5cdea576689328c0ef9be9cea2);
+        
+    
+        var popup_1a2ab69929822209eede3445882f6ee1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a3459c4e54312205c99fd924ea9e33e5 = $(`<div id="html_a3459c4e54312205c99fd924ea9e33e5" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Ντουμπρόβνικ<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 1200.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1480.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1480.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_1a2ab69929822209eede3445882f6ee1.setContent(html_a3459c4e54312205c99fd924ea9e33e5);
+        
+
+        marker_cfda4e270a4e33ddab2e709991a373d7.bindPopup(popup_1a2ab69929822209eede3445882f6ee1)
+        ;
+
+        
+    
+    
+            var marker_74ce80b3bdeec0a01ad4b1cf7ca16996 = L.marker(
+                [43.7034, 7.2663],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_5c9331d83f8f8bd94621572e4a1cde98 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_74ce80b3bdeec0a01ad4b1cf7ca16996.setIcon(icon_5c9331d83f8f8bd94621572e4a1cde98);
+        
+    
+        var popup_452809861a3fc9c460c9128cb69d3d54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a7b0dbd9ef7ff3c838654d233a1f43e = $(`<div id="html_0a7b0dbd9ef7ff3c838654d233a1f43e" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Νίκαια-Κάννες<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη-Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 1850.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 2130.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 2130.0<br>         <b>Σημειώσεις:</b> Road trip με Ιταλία         </div>`)[0];
+            popup_452809861a3fc9c460c9128cb69d3d54.setContent(html_0a7b0dbd9ef7ff3c838654d233a1f43e);
+        
+
+        marker_74ce80b3bdeec0a01ad4b1cf7ca16996.bindPopup(popup_452809861a3fc9c460c9128cb69d3d54)
+        ;
+
+        
+    
+    
+            var marker_919e7857ad322f34c690513ece4fc4cc = L.marker(
+                [-0.7893, 113.9213],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_0a5711d5f07582e555e63e0c433e7083 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_919e7857ad322f34c690513ece4fc4cc.setIcon(icon_0a5711d5f07582e555e63e0c433e7083);
+        
+    
+        var popup_1ff4738a50a5c25d1b7c67ffd8673bb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a7865f6c7cd585d55c0b862aee42037 = $(`<div id="html_7a7865f6c7cd585d55c0b862aee42037" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Ινδονησία<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Καλοκαίρι<br>         <b>Εκτιμώμενο Κόστος:</b> 7160.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 7440.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 7440.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_1ff4738a50a5c25d1b7c67ffd8673bb3.setContent(html_7a7865f6c7cd585d55c0b862aee42037);
+        
+
+        marker_919e7857ad322f34c690513ece4fc4cc.bindPopup(popup_1ff4738a50a5c25d1b7c67ffd8673bb3)
+        ;
+
+        
+    
+    
+            var marker_4a7970e0a1d4d3dd9e3a473d4148527f = L.marker(
+                [35.6895, 139.6917],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_ee1ff4e2069c90b4e307796a3db97ae7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4a7970e0a1d4d3dd9e3a473d4148527f.setIcon(icon_ee1ff4e2069c90b4e307796a3db97ae7);
+        
+    
+        var popup_b7be02a071cdbd099bf5397c9d34bcc3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2cc5e83548248d7a0f4eefabef366499 = $(`<div id="html_2cc5e83548248d7a0f4eefabef366499" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Τόκιο<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη<br>         <b>Εκτιμώμενο Κόστος:</b> 8800.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 9080.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 9080.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_b7be02a071cdbd099bf5397c9d34bcc3.setContent(html_2cc5e83548248d7a0f4eefabef366499);
+        
+
+        marker_4a7970e0a1d4d3dd9e3a473d4148527f.bindPopup(popup_b7be02a071cdbd099bf5397c9d34bcc3)
+        ;
+
+        
+    
+    
+            var marker_2218bea07e9390e93f0b7c110cfc080d = L.marker(
+                [39.9042, 116.4074],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_0fd6d45cb9d098343b4479bb56e3c09d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2218bea07e9390e93f0b7c110cfc080d.setIcon(icon_0fd6d45cb9d098343b4479bb56e3c09d);
+        
+    
+        var popup_e4da8043128754a7308f75464031de3f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a5bfe6cf5f2787c9459f96cfb299035f = $(`<div id="html_a5bfe6cf5f2787c9459f96cfb299035f" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Πεκίνο<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Φθινόπωρο<br>         <b>Εκτιμώμενο Κόστος:</b> 7160.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 7440.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 7440.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_e4da8043128754a7308f75464031de3f.setContent(html_a5bfe6cf5f2787c9459f96cfb299035f);
+        
+
+        marker_2218bea07e9390e93f0b7c110cfc080d.bindPopup(popup_e4da8043128754a7308f75464031de3f)
+        ;
+
+        
+    
+    
+            var marker_68acebd8721b6ff8da7a7476a890323a = L.marker(
+                [25.276987, 55.296249],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_3c57bffd3846ae356b35f0e6665be2cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_68acebd8721b6ff8da7a7476a890323a.setIcon(icon_3c57bffd3846ae356b35f0e6665be2cd);
+        
+    
+        var popup_58814f34427e9d4a8e2b38df937634b1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_12d69a99b4d952ba06f313481104aa89 = $(`<div id="html_12d69a99b4d952ba06f313481104aa89" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Ντουμπάι<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Νοέμβριος-Φεβρουάριος<br>         <b>Εκτιμώμενο Κόστος:</b> 2700.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 2980.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 2980.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_58814f34427e9d4a8e2b38df937634b1.setContent(html_12d69a99b4d952ba06f313481104aa89);
+        
+
+        marker_68acebd8721b6ff8da7a7476a890323a.bindPopup(popup_58814f34427e9d4a8e2b38df937634b1)
+        ;
+
+        
+    
+    
+            var marker_2b8ef2a8016cd165c95fae3f26a2bd58 = L.marker(
+                [-8.3405, 115.092],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_a602d0e7f01b411be63bf9a7503c9284 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2b8ef2a8016cd165c95fae3f26a2bd58.setIcon(icon_a602d0e7f01b411be63bf9a7503c9284);
+        
+    
+        var popup_e3bf89460ba9803703ccc624be92bfd3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ece57bd0cf7dbe0f154e3c6e40cbca62 = $(`<div id="html_ece57bd0cf7dbe0f154e3c6e40cbca62" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Μπαλί<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Ιούνιος-Οκτώβριος<br>         <b>Εκτιμώμενο Κόστος:</b> 1200.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1480.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1480.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_e3bf89460ba9803703ccc624be92bfd3.setContent(html_ece57bd0cf7dbe0f154e3c6e40cbca62);
+        
+
+        marker_2b8ef2a8016cd165c95fae3f26a2bd58.bindPopup(popup_e3bf89460ba9803703ccc624be92bfd3)
+        ;
+
+        
+    
+    
+            var marker_2e27806342072f0f5559bfcfc06609db = L.marker(
+                [13.4125, 122.5621],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_1be11585a33e3fa8b850a2ac49c9a668 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e27806342072f0f5559bfcfc06609db.setIcon(icon_1be11585a33e3fa8b850a2ac49c9a668);
+        
+    
+        var popup_883c62365a49b6b0d483ba243d0a6072 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_92fc62d690753b27166a9c2b9dd470b8 = $(`<div id="html_92fc62d690753b27166a9c2b9dd470b8" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Φιλιππίνες<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Δεκέμβριος-Μάιος<br>         <b>Εκτιμώμενο Κόστος:</b> 1500.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1916.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1916.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_883c62365a49b6b0d483ba243d0a6072.setContent(html_92fc62d690753b27166a9c2b9dd470b8);
+        
+
+        marker_2e27806342072f0f5559bfcfc06609db.bindPopup(popup_883c62365a49b6b0d483ba243d0a6072)
+        ;
+
+        
+    
+    
+            var marker_7d06cfcc2aa0c3ab309086b043607a5c = L.marker(
+                [7.8731, 80.7718],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_15c5b567cfe43dae9bdade37f6c6f500 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7d06cfcc2aa0c3ab309086b043607a5c.setIcon(icon_15c5b567cfe43dae9bdade37f6c6f500);
+        
+    
+        var popup_c0a6587e354e554581cdbb6429c344f4 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_26532c58c4304ac7011f0015c54f3abb = $(`<div id="html_26532c58c4304ac7011f0015c54f3abb" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Σρι Λάνκα<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Δεκέμβριος-Μάρτιος<br>         <b>Εκτιμώμενο Κόστος:</b> 1300.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1580.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1580.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_c0a6587e354e554581cdbb6429c344f4.setContent(html_26532c58c4304ac7011f0015c54f3abb);
+        
+
+        marker_7d06cfcc2aa0c3ab309086b043607a5c.bindPopup(popup_c0a6587e354e554581cdbb6429c344f4)
+        ;
+
+        
+    
+    
+            var marker_bc22d26691517e805119e8a8e41e83b6 = L.marker(
+                [31.6295, -7.9811],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_4bde2fe33ccca209871db88191d6891c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bc22d26691517e805119e8a8e41e83b6.setIcon(icon_4bde2fe33ccca209871db88191d6891c);
+        
+    
+        var popup_3aa72e9b76cbbca1ce252e6434e5383f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b13431b6682af683a98da74fbb7a1cc4 = $(`<div id="html_b13431b6682af683a98da74fbb7a1cc4" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Μαρακές<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Μάρτιος-Μάιος, Σεπτέμβριος-Νοέμβριος<br>         <b>Εκτιμώμενο Κόστος:</b> 1000.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1280.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1280.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_3aa72e9b76cbbca1ce252e6434e5383f.setContent(html_b13431b6682af683a98da74fbb7a1cc4);
+        
+
+        marker_bc22d26691517e805119e8a8e41e83b6.bindPopup(popup_3aa72e9b76cbbca1ce252e6434e5383f)
+        ;
+
+        
+    
+    
+            var marker_ab510deeebdfbe2e2b81898333f39c43 = L.marker(
+                [30.0444, 31.2357],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_89f3ff8fdd4e608705b2aa12919fe3aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab510deeebdfbe2e2b81898333f39c43.setIcon(icon_89f3ff8fdd4e608705b2aa12919fe3aa);
+        
+    
+        var popup_e8161ada7e54f042682392e20e71f4bc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c39e681fe635d677d7efc83d42710df = $(`<div id="html_7c39e681fe635d677d7efc83d42710df" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Κάιρο<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Οκτώβριος-Απρίλιος<br>         <b>Εκτιμώμενο Κόστος:</b> 1200.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 1480.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 1480.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_e8161ada7e54f042682392e20e71f4bc.setContent(html_7c39e681fe635d677d7efc83d42710df);
+        
+
+        marker_ab510deeebdfbe2e2b81898333f39c43.bindPopup(popup_e8161ada7e54f042682392e20e71f4bc)
+        ;
+
+        
+    
+    
+            var marker_2998cb30c8c04bf59cd881ec02de5be6 = L.marker(
+                [-1.2921, 36.8219],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_664ec1ff576d8b615c4f93f9e86d43f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2998cb30c8c04bf59cd881ec02de5be6.setIcon(icon_664ec1ff576d8b615c4f93f9e86d43f7);
+        
+    
+        var popup_b852baec6cca0a66ab0842099fa096c3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c394e87921fd9c971903bcc74a3c15cb = $(`<div id="html_c394e87921fd9c971903bcc74a3c15cb" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Σαφάρι στην Κένυα<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Ιούλιος-Οκτώβριος<br>         <b>Εκτιμώμενο Κόστος:</b> 4000.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 4280.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 4280.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_b852baec6cca0a66ab0842099fa096c3.setContent(html_c394e87921fd9c971903bcc74a3c15cb);
+        
+
+        marker_2998cb30c8c04bf59cd881ec02de5be6.bindPopup(popup_b852baec6cca0a66ab0842099fa096c3)
+        ;
+
+        
+    
+    
+            var marker_e313987902c5201e562db6083cd3655a = L.marker(
+                [-41.8101, -68.9063],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_ff5fb520c1fd468803a1fc7df11235f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e313987902c5201e562db6083cd3655a.setIcon(icon_ff5fb520c1fd468803a1fc7df11235f3);
+        
+    
+        var popup_9f7f5602bca5d6601e939a5bf52e83a7 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_acb81d22d9f83fc885e52c282ed0cced = $(`<div id="html_acb81d22d9f83fc885e52c282ed0cced" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Παταγονία<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Νοέμβριος-Φεβρουάριος<br>         <b>Εκτιμώμενο Κόστος:</b> 3500.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 3780.0<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 3780.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_9f7f5602bca5d6601e939a5bf52e83a7.setContent(html_acb81d22d9f83fc885e52c282ed0cced);
+        
+
+        marker_e313987902c5201e562db6083cd3655a.bindPopup(popup_9f7f5602bca5d6601e939a5bf52e83a7)
+        ;
+
+        
+    
+    
+            var marker_f5c28c3e970c218394ed8097fc0bb847 = L.marker(
+                [3.2028, 73.2207],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_b295b2d40a379af4c255f9cb1584da20 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f5c28c3e970c218394ed8097fc0bb847.setIcon(icon_b295b2d40a379af4c255f9cb1584da20);
+        
+    
+        var popup_ae303e1982aebee36a3724098484c1f6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ec3df4a85b4e594399bb416a08f0888 = $(`<div id="html_9ec3df4a85b4e594399bb416a08f0888" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Μαλδίβες<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Νοέμβριος-Απρίλιος<br>         <b>Εκτιμώμενο Κόστος:</b> 4000.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 5038.4<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 5038.4<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_ae303e1982aebee36a3724098484c1f6.setContent(html_9ec3df4a85b4e594399bb416a08f0888);
+        
+
+        marker_f5c28c3e970c218394ed8097fc0bb847.bindPopup(popup_ae303e1982aebee36a3724098484c1f6)
+        ;
+
+        
+    
+    
+            var marker_ab236a10ebc1070fa7aaf8b0b7327c4c = L.marker(
+                [35.0116, 135.7681],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_0e273b0bf621fa09ab50b8d42d192dcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab236a10ebc1070fa7aaf8b0b7327c4c.setIcon(icon_0e273b0bf621fa09ab50b8d42d192dcf);
+        
+    
+        var popup_b20659786a18c93d95515d55a915cccc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_de96acb7bd041d3fce15b8272505cb3c = $(`<div id="html_de96acb7bd041d3fce15b8272505cb3c" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Κιότο<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη-Φθινόπωρο<br>         <b>Εκτιμώμενο Κόστος:</b> 2500.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 2537.7<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 2537.7<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_b20659786a18c93d95515d55a915cccc.setContent(html_de96acb7bd041d3fce15b8272505cb3c);
+        
+
+        marker_ab236a10ebc1070fa7aaf8b0b7327c4c.bindPopup(popup_b20659786a18c93d95515d55a915cccc)
+        ;
+
+        
+    
+    
+            var marker_fd74e4aa287b33aec93874fa86887e1d = L.marker(
+                [-13.1631, -72.545],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_fe826982345de15fdbc630bbacdb6994 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd74e4aa287b33aec93874fa86887e1d.setIcon(icon_fe826982345de15fdbc630bbacdb6994);
+        
+    
+        var popup_250007f2aae381bf8d82a82739ea2e8e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a30f7672901009f39b469cb18efa096 = $(`<div id="html_8a30f7672901009f39b469cb18efa096" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Μάτσου Πίτσου<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Απρίλιος-Οκτώβριος<br>         <b>Εκτιμώμενο Κόστος:</b> 4000.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 5012.8<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 5012.8<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_250007f2aae381bf8d82a82739ea2e8e.setContent(html_8a30f7672901009f39b469cb18efa096);
+        
+
+        marker_fd74e4aa287b33aec93874fa86887e1d.bindPopup(popup_250007f2aae381bf8d82a82739ea2e8e)
+        ;
+
+        
+    
+    
+            var marker_75da882bcba67278eb9f5c70fb6d6f12 = L.marker(
+                [59.3293, 18.0686],
+                {}
+            ).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+        
+    
+            var icon_d76381ae9425410cc4d6bc2dccfc8fe3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75da882bcba67278eb9f5c70fb6d6f12.setIcon(icon_d76381ae9425410cc4d6bc2dccfc8fe3);
+        
+    
+        var popup_3e2cb1f4e03ec784d12b924704054104 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a7e8fd77f4e0b8558edfff7e40db4e4 = $(`<div id="html_0a7e8fd77f4e0b8558edfff7e40db4e4" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Στοκχόλμη<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Όλο το χρόνο<br>         <b>Εκτιμώμενο Κόστος:</b> 3000.0<br>         <b>Σύνολο Κόστους Ανά Προορισμό:</b> 3101.15<br>         <b>Ποσό που Έχει Αποταμιευθεί:</b> 0.0<br>         <b>Υπόλοιπο Ποσό:</b> 3101.15<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+            popup_3e2cb1f4e03ec784d12b924704054104.setContent(html_0a7e8fd77f4e0b8558edfff7e40db4e4);
+        
+
+        marker_75da882bcba67278eb9f5c70fb6d6f12.bindPopup(popup_3e2cb1f4e03ec784d12b924704054104)
+        ;
+
+        
+    
+
+var marker_28 = L.marker(
+    [47.3769, 8.5417],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_28 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+);
+marker_28.setIcon(icon_28);
+
+var popup_28 = L.popup({"maxWidth": "100%"});
+
+var html_28 = $(`<div id="html_28" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Ζυρίχη<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Χειμώνας<br>         <b>Σύνολο Κόστους:</b> €2025.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+popup_28.setContent(html_28);
+
+marker_28.bindPopup(popup_28);
+
+var marker_29 = L.marker(
+    [47.5596, 7.5886],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_29 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+);
+marker_29.setIcon(icon_29);
+
+var popup_29 = L.popup({"maxWidth": "100%"});
+
+var html_29 = $(`<div id="html_29" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Βασιλεία<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη<br>         <b>Σύνολο Κόστους:</b> €1325.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+popup_29.setContent(html_29);
+
+marker_29.bindPopup(popup_29);
+
+var marker_30 = L.marker(
+    [40.8518, 14.2681],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_30 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+);
+marker_30.setIcon(icon_30);
+
+var popup_30 = L.popup({"maxWidth": "100%"});
+
+var html_30 = $(`<div id="html_30" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Νάπολη, Ποζιτάνο, Αμάλφι<br>         <b>Ιδανική Περίοδος Επίσκεψης:</b> Άνοιξη-Φθινόπωρο<br>         <b>Σύνολο Κόστους:</b> €4155.0<br>         <b>Σημειώσεις:</b> -         </div>`)[0];
+popup_30.setContent(html_30);
+
+marker_30.bindPopup(popup_30);
+
+var marker_2000 = L.marker(
+    [35.8997, 14.5146],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_2000 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+);
+marker_2000.setIcon(icon_2000);
+
+var popup_2000 = L.popup({"maxWidth": "100%"});
+
+var html_2000 = $(`<div id="html_2000" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Μάλτα<br>         <b>Έτος Επίσκεψης:</b> 2024<br>         <b>Σημειώσεις:</b> Επισκεφθήκαμε         </div>`)[0];
+popup_2000.setContent(html_2000);
+
+marker_2000.bindPopup(popup_2000);
+
+var marker_2001 = L.marker(
+    [43.7696, 11.2558],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_2001 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+);
+marker_2001.setIcon(icon_2001);
+
+var popup_2001 = L.popup({"maxWidth": "100%"});
+
+var html_2001 = $(`<div id="html_2001" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Φλωρεντία<br>         <b>Έτος Επίσκεψης:</b> 2023<br>         <b>Σημειώσεις:</b> Επισκεφθήκαμε         </div>`)[0];
+popup_2001.setContent(html_2001);
+
+marker_2001.bindPopup(popup_2001);
+
+var marker_2002 = L.marker(
+    [44.1025, 9.8286],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_2002 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+);
+marker_2002.setIcon(icon_2002);
+
+var popup_2002 = L.popup({"maxWidth": "100%"});
+
+var html_2002 = $(`<div id="html_2002" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Σπέτσια<br>         <b>Έτος Επίσκεψης:</b> 2023<br>         <b>Σημειώσεις:</b> Επισκεφθήκαμε         </div>`)[0];
+popup_2002.setContent(html_2002);
+
+marker_2002.bindPopup(popup_2002);
+
+var marker_2003 = L.marker(
+    [44.12, 9.7046],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_2003 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+);
+marker_2003.setIcon(icon_2003);
+
+var popup_2003 = L.popup({"maxWidth": "100%"});
+
+var html_2003 = $(`<div id="html_2003" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Cinqueterre<br>         <b>Έτος Επίσκεψης:</b> 2023<br>         <b>Σημειώσεις:</b> Επισκεφθήκαμε         </div>`)[0];
+popup_2003.setContent(html_2003);
+
+marker_2003.bindPopup(popup_2003);
+
+var marker_2004 = L.marker(
+    [51.5074, -0.1278],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_2004 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+);
+marker_2004.setIcon(icon_2004);
+
+var popup_2004 = L.popup({"maxWidth": "100%"});
+
+var html_2004 = $(`<div id="html_2004" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Λονδίνο<br>         <b>Έτος Επίσκεψης:</b> 2023<br>         <b>Σημειώσεις:</b> Επισκεφθήκαμε         </div>`)[0];
+popup_2004.setContent(html_2004);
+
+marker_2004.bindPopup(popup_2004);
+
+var marker_2005 = L.marker(
+    [45.4408, 12.3155],
+    {}
+).addTo(map_2c7d3786fe2c6f9e744dcfc5a4299126);
+
+var icon_2005 = L.AwesomeMarkers.icon(
+    {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+);
+marker_2005.setIcon(icon_2005);
+
+var popup_2005 = L.popup({"maxWidth": "100%"});
+
+var html_2005 = $(`<div id="html_2005" style="width: 100.0%; height: 100.0%;">         <b>Προορισμός:</b> Βενετία<br>         <b>Έτος Επίσκεψης:</b> 2023<br>         <b>Σημειώσεις:</b> Επισκεφθήκαμε         </div>`)[0];
+popup_2005.setContent(html_2005);
+
+marker_2005.bindPopup(popup_2005);
+</script>
+</html>
